@@ -1,0 +1,248 @@
+body{
+	/*background es para imagen de fondo*/
+	background-image:url("../imagenes/lila.jpg");
+	/*font-family es para tipografia de letra*/
+	font-family:"tahoma","lucida console","courier new";
+	/*color pues para el color de la letra*/
+	color:#566573;
+	/*font size es para el tamaño de la letra en pixeles*/
+	font-size:40px;
+	text-align:center;
+}
+hr{
+	/*border es para la linea
+	el grosor se indica en pixeles,
+	indicamos el tipo de lineay el codigo del color*/
+	border:3px solid #566573;
+	/*width es para el ancho*/
+	width: 80%;
+	/*aqui el borde para redondearlo*/
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:20px;
+	color:#000000;
+	/*letras negritas*/
+	font-weight:bold;
+	line-height:1.5;
+	background-color:#e093fd;
+	/*espacio entre letra*/
+	letter-spacing: 1px;
+}
+table,tr,td{
+	border:1px solid #F7D25E;
+	border-spacing:0px;
+	background-color:#f9b9f1;
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+}
+/*para crear una clase se pone "."*/
+.pie{
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	color:000000;
+}
+.encabezado{
+	text-align:center;
+	font-family:white beach;
+	font-size:50px;
+	font-weight:bold;
+	color:#3f2727;
+}
+/*divs*/
+div#top{
+	width:100%;
+	height:60px;
+	background-image:linear-gradient(#cc89d8 ,#e093fd);
+	font-family:backso;
+	src: utl(../fuentes/backso.ttf);
+	/*background-image:radial-gradient(#3d2121,#3f2727);*/
+	/*background-image:conic-gradient(#3d2121,#3f2727);*/
+	/*background-image:linear-gradient(#3d2121,#3f2727)*/
+	/*background-image:url;*/
+}
+/*ppag*/
+div#pie_de_pagina{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#e093fd,#cc89d8);
+}
+/*carrusel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing: border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a > i {
+	color:white;
+}
+/*cajas para productos asi se le llama a los divs*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#f2c4fc;
+	border:1px solid #eee;
+	margin:10px;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px #da67da;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	font-family:cupcakes;
+	src: utl(../fuentes/cupcakes.ttf);
+	padding-bottom:5px;
+	font-size:15px;
+	color:000000;
+	font-weight:bold;
+}
+.texto-adicional{
+	font-family:cupcakes;
+	src: utl(../fuentes/cupcakes.ttf);
+	padding-top:5px;
+	font-size:15px;
+}
+.bersa{
+	padding-top:5px;
+	font-size:15px;
+	color:black;
+	text-align:center;
+}
+.navegacion{
+	display:flex;
+	height:300px;
+}
+.navegacion-item{
+	flex:1;
+	font-family:backso;
+	src: utl(../fuentes/backso.ttf);
+	color:#bb41a7;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition: flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	font-family:cupcakes;
+	src: utl(../fuentes/cupcakes.ttf);
+	transform:rotate(-360deg);
+	transition:transform 0.3s 0.3s;
+	font-size:20px;
+	color:#000000;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#e093fd;
+}
+.navegacion-item:nth-child(2){
+	background:#e093fd;
+}
+.navegacion-item:nth-child(3){
+	background:#e093fd;
+}
+.navegacion-item:nth-child(4){
+	background:#e093fd;
+}
+.cuadro{
+	text-align: center;
+	display: flex;
+	border: 5px solid #bb41a7;
+	padding: 10px;
+	max-width: 1000px;
+}
+.imagen{
+	width: 300px;
+	height: 300px;
+	background-image: url(../imagenes/logo.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-right: 20px;
+}
+.texto{
+	font-size: 35px;
+}
+.navegacion-item{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width: 700px;
+	height: 300px;
+}
+@font-face{
+	font-family:cupcakes;
+	src: utl(../fuentes/cupcakes.ttf);
+}
+@font-face{
+	font-family:backso;
+	src: utl(../fuentes/backso.ttf);
+}
+@font-face{
+	font-family:white beach;
+	src: utl(../fuentes/white beach.ttf);
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bb41a7;
+}
